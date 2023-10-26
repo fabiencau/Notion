@@ -9,8 +9,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Socials</title>
-
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
   <style>
@@ -22,6 +20,7 @@
 
     body {
       display: grid;
+      font-family: "Poppins", sans-serif;
       place-items: center;
     }
 
@@ -31,76 +30,51 @@
 
     }
 
-    .fill {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 40px;
-      height: 40px;
-      color: #fff;
-      outline: 0;
-      cursor: pointer;
-      position: relative;
-      margin: 5px;
-      background-color: #4b4b4b;
-    }
-
     .icon {
-      font-size: 1em;
+      /* Change the icon size here */
+      font-size: 2em;
+      /* Change the icons colours here*/
+      color: #7a7a7a
     }
 
-    .blog:hover{
-      background-color: #ffbd2f;
+
+    .blog:hover {
+      color: #ffbd2f;
     }
 
-    .email:hover{
-      background-color: #23c8c8;
+    .email:hover {
+      color: #23c8c8;
     }
 
-    .facebook:hover{
-      background-color: #4267B2;
+    .facebook:hover {
+      color: #4267B2;
     }
 
-    .instagram:hover{
-      background: #f86ee1;
+    .instagram:hover {
+      color: rgb(241, 102, 217);
     }
 
-    .linkedin:hover{
-      background-color: #0e76a8;
+    .linkedin:hover {
+      color: #0e76a8;
     }
 
-    .twitter:hover{
-      background-color: #26a7de;
+    .twitter:hover {
+      color: #26a7de;
     }
 
-    .reddit:hover{
-      background-color: #ff4500;
+    .youtube:hover {
+      color: #FF0000;
     }
 
-    .tiktok:hover{
-      background-color: #ff0050;
-    }
 
-    .youtube:hover{
-      background-color: #FF0000;
-    }
-
-    .pinterest:hover{
-      background-color: #c8232c;
-    }
-
-    .telegram:hover{
-      background-color: #2AABEE;
+    .telegram:hover {
+      color: #2AABEE;
     }
 
     .social {
       position: relative;
       margin: 10px;
       cursor: pointer;
-    }
-
-    .social:hover {
-      color: #fff;
     }
   </style>
 
@@ -113,78 +87,71 @@
     <div class="wrapper">
 
       <!-- Start blog Icon -->
-      <div id="blog" onclick="navigate(this.id)" class="fill  blog">
-        <span class="icon"><i class="fa-solid fa-blog"></i></span>
+      <div id="blog" onclick="navigate(https://unabriquisauvedesvies.fr/)" class="social">
+        <span class="icon blog"><i class="fa-solid fa-blog"></i></span>
       </div>
       <!-- End blog Icon -->
 
-
       <!-- Start email Icon -->
-      <div id="email" onclick="navigate(this.id)" class="fill email">
+      <div id="email" onclick="navigate(this.id)" class="social">
         <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
       </div>
       <!-- End email Icon -->
 
-
       <!-- Start facebook Icon -->
-      <div id="facebook" onclick="navigate(this.id)" class="fill facebook">
-        <span class="icon"><i class="fab fa-facebook"></i></span>
+      <div id="facebook" onclick="navigate(this.id)" class="social">
+        <span class="icon facebook"><i class="fab fa-facebook"></i></span>
       </div>
       <!-- End facebook Icon -->
 
-
       <!-- Start instagram Icon -->
-      <div id="instagram" onclick="navigate(this.id)" class="fill instagram">
-        <span class="icon"><i class="fab fa-instagram"></i></span>
+      <div id="instagram" onclick="navigate(this.id)" class="social">
+        <span class="icon instagram"><i class="fab fa-instagram"></i></span>
       </div>
       <!-- End instagram Icon -->
 
-
       <!-- Start linkedin Icon -->
-      <div id="linkedin" onclick="navigate(this.id)" class="fill linkedin">
-        <span class="icon"><i class="fab fa-linkedin"></i></span>
+      <div id="linkedin" onclick="navigate(this.id)" class="social">
+        <span class="icon linkedin"><i class="fab fa-linkedin"></i></span>
       </div>
       <!-- End linkedin Icon -->
 
-
       <!-- Start twitter Icon -->
-      <div id="twitter" onclick="navigate(this.id)" class="fill twitter">
-        <span class="icon"><i class="fab fa-twitter"></i></span>
+      <div id="twitter" onclick="navigate(this.id)" class="social">
+        <span class="icon twitter"><i class="fab fa-twitter"></i></span>
       </div>
       <!-- End twitter Icon -->
 
-
       <!-- Start reddit Icon -->
-      <div id="reddit" onclick="navigate(this.id)" class="fill reddit">
-        <span class="icon"><i class="fab fa-reddit"></i></span>
+      <div id="reddit" onclick="navigate(this.id)" class="social">
+        <span class="icon reddit"><i class="fab fa-reddit"></i></span>
       </div>
       <!-- End reddit Icon -->
 
-
       <!-- Start tiktok Icon -->
-      <div id="tiktok" onclick="navigate(this.id)" class="fill tiktok">
-        <span class="icon"><i class="fab fa-tiktok"></i></span>
+      <div id="tiktok" onclick="navigate(this.id)" class="social">
+        <span class="icon tiktok"><i class="fab fa-tiktok"></i></span>
       </div>
       <!-- End tiktok Icon -->
 
       <!-- Start youtube Icon -->
-      <div id="youtube" onclick="navigate(this.id)" class="fill youtube">
-        <span class="icon"><i class="fab fa-youtube"></i></span>
+      <div id="youtube" onclick="navigate(this.id)" class="social">
+        <span class="icon youtube"><i class="fab fa-youtube"></i></span>
       </div>
       <!-- End youtube Icon -->
 
       <!-- Start pinterest Icon -->
-      <div id="pinterest" onclick="navigate(this.id)" class="fill pinterest">
-        <span class="icon"><i class="fab fa-pinterest"></i></span>
+      <div id="pinterest" onclick="navigate(this.id)" class="social">
+        <span class="icon pinterest"><i class="fab fa-pinterest"></i></span>
       </div>
       <!-- End pinterest Icon -->
 
-
       <!-- Start telegram Icon -->
-      <div id="telegram" onclick="navigate(this.id)" class="fill telegram">
-        <span class="icon"><i class="fab fa-telegram"></i></span>
+      <div id="telegram" onclick="navigate(this.id)" class="social">
+        <span class="icon telegram"><i class="fab fa-telegram"></i></span>
       </div>
       <!-- End telegram Icon -->
+
 
 
     </div>
@@ -203,6 +170,7 @@
         else if (id === "email") {
           window.open("mailto:someone@yoursite.com", '_blank').focus(); //Add your email after "mailto:""
         }
+
         else if (id === "facebook") {
           window.open("https://facebook.com/", '_blank').focus(); //Add the url to your facebook page or account
         }
